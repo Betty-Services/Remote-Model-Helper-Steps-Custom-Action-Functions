@@ -7,5 +7,3 @@ This repository hosts the code for the custom actions steps found in the [the bl
 ### This repository hosts the following steps:
 
 - 
-
-_Do not forget to update the badge above once this repository has been used._
