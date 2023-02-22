@@ -1,0 +1,14 @@
+{
+  "dependencies": ["jwt-decode"],
+  "functions": [
+    "addIds 1.0",
+    "disectParams 1.0",
+    "fixPropertyType 1.0",
+    "getFields 1.0",
+    "getFilters 1.0",
+    "getLimitOffset 1.0",
+    "parseAsJwt 1.0",
+    "provisionFields 1.0"
+  ],
+  "includes": []
+}
