@@ -1,4 +1,4 @@
-const provisonFields = async ({ fields, input }) => {
+const provisionFields = async ({ fields, input }) => {
   try {
     fields = JSON.parse(fields);
   } finally {
@@ -27,4 +27,4 @@ const provisonFields = async ({ fields, input }) => {
   }
 };
 
-export default provisonFields;
+export default provisionFields;
