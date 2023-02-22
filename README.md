@@ -17,7 +17,7 @@ This repository hosts the code for the custom actions steps found in the [Remote
 
 ### Add IDS
 
-This step takes either an `array` or an `object` as it's input and will add the `id` key to it. You can specify the value that it should get (from another key in the object), or it will automatically add the value starting at 1 and counting up from there when the input is an `array`.
+This step takes an `array` as it's input and will add the `id` key to every objrct element in it. You can specify the value that it should get from another key in the object, or it will automatically add the value starting at 1 and counting up from there.
 
 ### Disect Params
 
@@ -25,8 +25,8 @@ This step takes the `params` object that a remote model action has as it's input
 
 - Fields
 - Filters
-- Limit
 - Offset
+- Limit
 
 #### Fields
 
