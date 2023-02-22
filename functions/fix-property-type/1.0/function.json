@@ -1,0 +1,57 @@
+{
+  "description": "This action can be used when an API returns property X as type Text/Number, but it should be Number/Text.",
+  "label": "Fix Property Type",
+  "category": "Remote Model",
+  "icon": {
+    "name": "WrenchIcon",
+    "color": "Pink"
+  },
+  "options": [
+    {
+      "label": "input",
+      "name": "input",
+      "meta": {
+        "type": "Value",
+        "allowedKinds": ["OBJECT", "ARRAY"]
+      }
+    },
+    {
+      "label": "Key name",
+      "name": "key",
+      "meta": {
+        "type": "Text"
+      }
+    },
+    {
+      "label": "set to",
+      "name": "setTo",
+      "meta": {
+        "validations": {
+          "required": true
+        },
+        "type": "Select",
+        "values": [
+          {
+            "label": "Text",
+            "value": "text"
+          },
+          {
+            "label": "Number",
+            "value": "number"
+          }
+        ]
+      }
+    },
+    {
+      "label": "as",
+      "name": "as",
+      "meta": {
+        "type": "Output",
+        "output": {
+          "type": "JSON"
+        }
+      }
+    }
+  ],
+  "yields": "NONE"
+}

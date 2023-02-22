@@ -1,0 +1,108 @@
+{
+  "description": "This step lets you retrieve all information stored inside a Betty Blocks JWT token",
+  "label": "Parse as JWT",
+  "category": "Remote Model",
+  "icon": {
+    "name": "DataJumpUpIcon",
+    "color": "Pink"
+  },
+  "options": [
+    {
+      "name": "jwt",
+      "label": "JWT",
+      "info": "Input the JWT here",
+      "meta": {
+        "type": "Object"
+      }
+    },
+    {
+      "label": "Alogirthm",
+      "name": "alg",
+      "info": "Outputs the name of the Hashing Algorithm used to sign this JWT",
+      "meta": {
+        "type": "Output",
+        "output": {
+          "type": "Text"
+        }
+      }
+    },
+    {
+      "label": "Authentication Profile ID",
+      "name": "authProfile",
+      "info": "Outputs the Authentication Profile ID of the JWT",
+      "meta": {
+        "type": "Output",
+        "output": {
+          "type": "Text"
+        }
+      }
+    },
+    {
+      "label": "Locale",
+      "name": "locale",
+      "info": "Outputs the users locale. If not set, it will be null.",
+      "meta": {
+        "type": "Output",
+        "output": {
+          "type": "Text"
+        }
+      }
+    },
+    {
+      "label": "Role IDs",
+      "name": "roles",
+      "info": "Outputs an array of the roles IDs associated with this user.",
+      "meta": {
+        "type": "Output",
+        "output": {
+          "type": "Object"
+        }
+      }
+    },
+    {
+      "name": "nbf",
+      "label": "Not valid before",
+      "info": "Contains the time at which this token becomes valid. This is formatted as a unix timestamp",
+      "meta": {
+        "type": "Output",
+        "output": {
+          "type": "Number"
+        }
+      }
+    },
+    {
+      "label": "User ID",
+      "info": "The ID of the user retrieved from this JWT",
+      "name": "user_id",
+      "meta": {
+        "type": "Output",
+        "output": {
+          "type": "Number"
+        }
+      }
+    },
+    {
+      "name": "iat",
+      "label": "Issued at",
+      "info": "Contains the time at which this token was issued. This is formatted as a unix timestamp.",
+      "meta": {
+        "type": "Output",
+        "output": {
+          "type": "Number"
+        }
+      }
+    },
+    {
+      "name": "exp",
+      "label": "Expires at",
+      "info": "Contains the time at which this token expires. This is formatted as a unix timestamp.",
+      "meta": {
+        "type": "Output",
+        "output": {
+          "type": "Number"
+        }
+      }
+    }
+  ],
+  "yields": "NONE"
+}

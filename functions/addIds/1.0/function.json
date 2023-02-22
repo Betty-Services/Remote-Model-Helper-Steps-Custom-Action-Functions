@@ -1,0 +1,42 @@
+{
+  "description": "In order for the front-end to display records, they need to have an ID.",
+  "label": "Add IDs",
+  "category": "Remote Model",
+  "icon": {
+    "name": "IDIcon",
+    "color": "Pink"
+  },
+  "options": [
+    {
+      "name": "existingKey",
+      "info": "If your records already have an ID (like userID) we can use this to set the main ID.",
+      "label": "Existing Key",
+      "meta": {
+        "type": "Text",
+        "validations": {
+          "required": false
+        }
+      }
+    },
+    {
+      "name": "array",
+      "label": "records",
+      "meta": {
+        "type": "Value",
+        "allowedKinds": ["ARRAY", "JSON", "OBJECT"]
+      },
+      "info": "The array of records"
+    },
+    {
+      "name": "as",
+      "label": "as",
+      "meta": {
+        "type": "Output",
+        "output": {
+          "type": "JSON"
+        }
+      }
+    }
+  ],
+  "yields": "NONE"
+}

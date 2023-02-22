@@ -1,0 +1,78 @@
+{
+  "description": "A step to extract the limit, offset, fields and filters from the params object.",
+  "label": "Disect Params",
+  "category": "Remote Model",
+  "icon": {
+    "color": "Pink",
+    "name": "DataJumpUpIcon"
+  },
+  "options": [
+    {
+      "name": "params",
+      "label": "Params Object",
+      "info": "Select the Params object here",
+      "meta": {
+        "type": "Object"
+      },
+      "configuration": {
+        "placeholder": "params"
+      }
+    },
+    {
+      "name": "fields",
+      "label": "Fields as",
+      "info": "Returns an ARRAY of the fields that are requested by the front-end.",
+      "meta": {
+        "type": "Output",
+        "output": {
+          "type": "Text"
+        }
+      }
+    },
+    {
+      "name": "filters",
+      "label": "Filters as",
+      "info": "Returns a Key-Value pair of the filters.",
+      "meta": {
+        "type": "Output",
+        "output": {
+          "type": "JSON"
+        }
+      }
+    },
+    {
+      "name": "offset",
+      "meta": {
+        "type": "Output",
+        "output": {
+          "type": "Number"
+        }
+      },
+      "label": "Offset as",
+      "info": "Returns the amount of records that need to be skipped."
+    },
+    {
+      "name": "limit",
+      "meta": {
+        "type": "Output",
+        "output": {
+          "type": "Number"
+        }
+      },
+      "label": "Limit as",
+      "info": "Returns the amount of records that need to be shown."
+    },
+    {
+      "name": "jwt",
+      "meta": {
+        "type": "Output",
+        "output": {
+          "type": "Object"
+        }
+      },
+      "label": "Auth Info",
+      "info": "Returns the JWT associated with the request."
+    }
+  ],
+  "yields": "NONE"
+}

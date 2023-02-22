@@ -1,0 +1,45 @@
+{
+  "description": "Gets the limit and offset in the request, from params, and outputs them as Numbers",
+  "label": "Get Limit and Offset",
+  "category": "Remote Model",
+  "icon": {
+    "color": "Pink",
+    "name": "DataJumpUpIcon"
+  },
+  "options": [
+    {
+      "name": "params",
+      "label": "Params",
+      "meta": {
+        "type": "Object"
+      },
+      "info": "The input variable 'Params'",
+      "configuration": {
+        "placeholder": "params"
+      }
+    },
+    {
+      "name": "offset",
+      "meta": {
+        "type": "Output",
+        "output": {
+          "type": "Number"
+        }
+      },
+      "label": "Offset as",
+      "info": "Returns the amount of records that need to be skipped in the results"
+    },
+    {
+      "name": "limit",
+      "meta": {
+        "type": "Output",
+        "output": {
+          "type": "Number"
+        }
+      },
+      "label": "Limit as",
+      "info": "Returns the amount of records that need to be shown in the results"
+    }
+  ],
+  "yields": "NONE"
+}

@@ -1,0 +1,37 @@
+{
+  "description": "Description",
+  "label": "Provison Fields",
+  "category": "Remote Model",
+  "icon": {
+    "name": "ActionsIcon",
+    "color": "Pink"
+  },
+  "options": [
+    {
+      "name": "fields",
+      "label": "fields",
+      "meta": {
+        "type": "Text"
+      }
+    },
+    {
+      "name": "input",
+      "label": "Items",
+      "meta": {
+        "type": "Value",
+        "allowedKinds": ["OBJECT", "JSON", "ARRAY"]
+      }
+    },
+    {
+      "label": "as",
+      "name": "as",
+      "meta": {
+        "type": "Output",
+        "output": {
+          "type": "JSON"
+        }
+      }
+    }
+  ],
+  "yields": "NONE"
+}

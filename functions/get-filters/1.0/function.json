@@ -1,0 +1,34 @@
+{
+  "description": "Gets the filters from the pagebuilder from the params object, and outputs them as a flattened key value object",
+  "label": "Get Filters",
+  "category": "Remote Model",
+  "icon": {
+    "color": "Pink",
+    "name": "DataJumpUpIcon"
+  },
+  "options": [
+    {
+      "name": "params",
+      "label": "Params Object",
+      "info": "Select the Params object here",
+      "meta": {
+        "type": "Object"
+      },
+      "configuration": {
+        "placeholder": "params"
+      }
+    },
+    {
+      "name": "as",
+      "label": "AS",
+      "info": "Returns a Key-Value pair of the filters",
+      "meta": {
+        "type": "Output",
+        "output": {
+          "type": "Object"
+        }
+      }
+    }
+  ],
+  "yields": "NONE"
+}
