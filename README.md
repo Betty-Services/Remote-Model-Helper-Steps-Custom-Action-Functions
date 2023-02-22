@@ -4,6 +4,76 @@
 
 This repository hosts the code for the custom actions steps found in the [Remote Model Helper Steps](https://my.bettyblocks.com/block-store/blockId/) from the Betty Blocks block store.
 
-### This repository hosts the following steps:
+## This repository hosts the following steps:
 
-- 
+- Add IDS
+- Disect Params
+- Fix Property Type
+- Get Fields
+- Get filters
+- Get Limit Offset
+- Parse as JWT
+- Provision Fields
+
+### Add IDS
+
+This step takes either an `array` or an `object` as it's input and will add the `id` key to it. You can specify the value that it should get (from another key in the object), or it will automatically add the value starting at 1 and counting up from there when the input is an `array`.
+
+### Disect Params
+
+This step takes the `params` object that a remote model action has as it's input and 'desects' it into 4 other variables:
+
+- Fields
+- Filters
+- Limit
+- Offset
+
+#### Fields
+
+The Data API tells us which fields are required to be returned to the front-end. This variable will most-likely be used for the `provision fields` step in this repository.
+
+#### Filters
+
+This returns the filters set on the Remote Data Model on the front-end, e.g. `name equals 'maarten'`. It flattens the data into a simple object such as:
+
+```
+{
+    name: 'maarten'
+}
+```
+
+#### Offset
+
+Offset is the beginning number of the records to show.
+So when we have a datatable that is on the first page, and shows 5 records, the offset will be `0`. If proceed to go to the next page, the offset will be `5`.
+
+#### Limit
+
+Limit is the end number of the records to show.
+So when we have a datatable that is on the first page, and that shows 5 records, the limit will be `5`. If proceed to go to the next page, the limit will be `10`.
+
+### Fix Property Type
+
+This step lets you convert values to and from numbers.
+This step takes either an `object` or `array` as an input, alongside the `keyname` that should be converted.
+**If the value you're trying to convert is `foo` and you want to convert it to a number, it will result in `NaN` so you better make sure the value can be converted!**
+
+### Parse as JWT
+
+This step takes in a JWT as input and lets you decode all it's information into readable variables to use in the Betty Blocks Action IDE.
+
+### Provision Fields
+
+This step takes the `fields` from the `disect params` object, alongside an input of an `Array` of `Object` and will add any missing `keys` in the input.
+
+### Get Fields
+
+Does the same as the `disect params` step but is only limited to the field.
+
+### Get Filters
+
+Does the same as the `disect params` step but is only limited to the fitlers.
+
+### Get Limit and Offset
+
+Does the same as the `disect params` step but is only limited to the limit and offset.
