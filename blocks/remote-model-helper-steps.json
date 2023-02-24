@@ -2,7 +2,7 @@
   "dependencies": ["jwt-decode"],
   "functions": [
     "addIds 1.0",
-    "disectParams 1.0",
+    "dissectParams 1.0",
     "fixPropertyType 1.0",
     "getFields 1.0",
     "getFilters 1.0",

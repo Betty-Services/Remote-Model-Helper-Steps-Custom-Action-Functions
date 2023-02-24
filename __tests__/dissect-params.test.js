@@ -1,4 +1,4 @@
-import disectParams from '../functions/disect-params/1.0';
+import dissectParams from '../functions/dissect-params/1.0';
 const paramsObj = {
   auth_info: { auth_profile: null, raw_jwt: null, user_id: null },
   conditions: [
@@ -56,7 +56,7 @@ const paramsObj = {
 
 describe('Get Limit, Offset, Fields & Filters', () => {
   test('Test', async () => {
-    const { offset, limit, fields, filters } = await disectParams({
+    const { offset, limit, fields, filters } = await dissectParams({
       params: paramsObj,
     });
     expect(offset).not.toBeNull();

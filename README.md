@@ -7,7 +7,7 @@ This repository hosts the code for the custom actions steps found in the [Remote
 ## This repository hosts the following steps:
 
 - Add IDS
-- Disect Params
+- Dissect Params
 - Fix Property Type
 - Get Fields
 - Get filters
@@ -17,11 +17,13 @@ This repository hosts the code for the custom actions steps found in the [Remote
 
 ### Add IDS
 
-This step takes an `array` as it's input and will add the `id` key to every objrct element in it. You can specify the value that it should get from another key in the object, or it will automatically add the value starting at 1 and counting up from there.
+This step takes an `array` as it's input, and expects it to have elements of the type `object` inside of it.
 
-### Disect Params
+It will continue to add the `id` key to every `object` element in it. You can specify the value that it should get from another key in the `object`, or it will automatically add the value starting at `1` and counting up from there.
 
-This step takes the `params` object that a remote model action has as it's input and 'desects' it into 4 other variables:
+### Dissect Params
+
+This step takes the `params` object that a remote model action has as it's input and 'dissects' it into 4 other variables:
 
 - Fields
 - Filters
@@ -64,7 +66,7 @@ This step takes in a JWT as input and lets you decode all it's information into 
 
 ### Provision Fields
 
-This step takes the `fields` from the `disect params` object, alongside an input of an `Array` of `Object` and will add any missing `keys` in the input.
+This step takes the `fields` from the `Dissect params` object, alongside an input of an `Array` of `Object` and will add any missing `keys` in the input.
 
 ### Get Fields
 

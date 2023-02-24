@@ -1,4 +1,4 @@
-const disectParams = async ({
+const dissectParams = async ({
   params: { skip, take, select, conditions, auth_info },
 }) => {
   let filters = {};
@@ -29,4 +29,4 @@ const disectParams = async ({
   };
 };
 
-export default disectParams;
+export default dissectParams;
