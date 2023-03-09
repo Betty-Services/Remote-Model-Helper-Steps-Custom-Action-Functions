@@ -74,7 +74,7 @@ Does the same as the `disect params` step but is only limited to the field.
 
 ### Get Filters
 
-Does the same as the `disect params` step but is only limited to the fitlers.
+Does the same as the `disect params` step but is only limited to the fitlers **and** doesn't flatten the object.
 
 ### Get Limit and Offset
 
