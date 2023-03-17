@@ -19,7 +19,7 @@
       "label": "Items",
       "meta": {
         "type": "Value",
-        "allowedKinds": ["OBJECT", "JSON", "ARRAY"]
+        "allowedKinds": ["OBJECT", "JSON", "ARRAY", "STRING"]
       }
     },
     {
